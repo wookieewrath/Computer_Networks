@@ -1,0 +1,47 @@
+compile			= "lab2b.c"
+
+bandwidth		= 56Kbps,
+
+messagerate             = 100ms,
+propagationdelay        = 200ms,
+
+// probframeloss		= 5,
+probframecorrupt	= 5
+
+host Perth {
+    x=100 y=50
+    winx=0, winy=50
+    link to Sydney {
+    }
+
+}
+
+host Sydney {
+    east of Perth
+    winx=550, winy=50
+        link to router1 {
+    }
+
+}
+
+router router1 {
+    east of Sydney
+    winx=550, winy=50
+            link to Edmonton {
+    }
+
+}
+
+host Edmonton {
+    east of router1
+    winx=550, winy=50
+            link to Calgary {
+    }
+
+}
+
+host Calgary {
+    east of Edmonton
+    winx=550, winy=50
+
+}
