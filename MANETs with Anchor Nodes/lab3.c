@@ -4,7 +4,7 @@
 #include <time.h>
 
 /************************************************************
-*   Routing in MANETs with Anchor Nodes            *
+*   Routing in MANETs with Anchor Nodes                     *
 *                                                           *
 *   Submitted by: Neel Kumar                                *
 *                                                           *
